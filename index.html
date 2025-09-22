@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Remembering Little Things — Photography by Jeremy</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="A photographic portfolio that remembers the little things.">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 class="logo">Remembering Little Things</h1>
+<nav>
+<ul class="nav-list">
+<li><a href="#favorites">Favorites</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<li class="photo-item">
+<a href="./images/images.jpeg" target="_blank" rel="noopener">
+<img src="./images/images.jpeg" alt="Portrait of a child with a thoughtful expression">
+<div class="caption"><strong>Thoughtful</strong><br><em>Portrait study</em></div>
+</a>60
+</li>
+<li class="photo-item">
+<a href="./images/download.jpeg" target="_blank" rel="noopener">
+<img src="./images/download.jpeg" alt="Warm cafe interior with bokeh lights">
+<div class="caption"><strong>Cafe Lights</strong><br><em>Evening cozy</em></div>
+</a>
+</li>
+<li class="photo-item">
+<a href="./images/download (1).jpeg" target="_blank" rel="noopener">
+<img src="./images/download (1).jpeg" alt="Waves crashing on a rocky shoreline at sunset">
+<div class="caption"><strong>Shoreline</strong><br><em>Sunset waves</em></div>
+</a>
+</li>
+</ul>
+</section>
+<section id="about" class="about container">
+<h3>About This Website</h3>
+<div class="about-grid">
+<img class="portrait" src="./images/jerrys image.jpg" alt="Portrait of the site owner">
+<div>
+<p><strong>Remembering Little Things</strong> is a small photographic portfolio created to celebrate the details that stick with us. The site collects a handful of favorite images — moments that felt meaningful when I pressed the shutter. Photography is a way of feeling, touching, and of loving; these images are my memory-keepers.</p>
+<p>The site is built with semantic HTML and a custom stylesheet. Images link to larger versions hosted by Unsplash (used here as placeholders). The design emphasizes large imagery, clear typography, and a calm color palette.
+</p>
+</div>
+</div>
+</section>
+<section id="contact" class="contact container">
+<h3>Contact</h3>
+<p>If you'd like to get in touch, please send a message below.</p>
+<form id="contactForm" action="#" method="post">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>&copy; 2025 Jeremy — Remembering Little Things. <a href="#about">About</a> • <a href="#favorites">Favorites</a></p>
+<p><a href="https://github.com/your-username/remembering-little-things" target="_blank" rel="noopener">Repository on GitHub</a></p>
+</div>
+</footer>
+<script>
+// small client-side enhancement: show a tiny thank you on submit (no backend)
+document.getElementById('contactForm').addEventListener('submit', function(e){
+e.preventDefault();
+alert('Thanks — your message has been noted (demo).');
+this.reset();
+});
+</script>
+</body>
+</html>
